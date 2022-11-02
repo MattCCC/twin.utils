@@ -10,7 +10,8 @@ import { theme } from 'twin.macro';
  * @see https://tailwindcss.com/docs/breakpoints
  */
 export type Screen = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'max';
-export const screens = typeof theme === "function" ? theme<Record<Screen, string>>('screens') : {};
+
+const screens = typeof theme === "function" ? theme<Record<Screen, string>>('screens') : {};
 
 // The maximum value is calculated as the minimum of the next one less 0.02px.
 // @see https://www.w3.org/TR/mediaqueries-4/#mq-min-max
