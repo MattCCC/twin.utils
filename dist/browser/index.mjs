@@ -1,0 +1,2 @@
+import{theme as c}from"twin.macro";var r=typeof c=="function"?c("screens"):{},o=e=>`${parseInt(e,10)-.02}px`,i=e=>`@media only screen and (min-width: ${r[e]})`,a=e=>`@media only screen and (max-width: ${o(r[e])})`,x=(e,n)=>{let s=r[e],t=o(r[n]);return`@media only screen and (min-width: ${s}) and (max-width: ${t})`},m=e=>{let n=Object.keys(r),s=n.indexOf(e),t=n[s+1];return t?x(e,t):i(e)};export{x as between,a as down,o as getNextBpValue,m as only,r as screens,i as up};
+//# sourceMappingURL=index.mjs.map
